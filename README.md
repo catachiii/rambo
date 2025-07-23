@@ -58,8 +58,8 @@ python scripts/reinforcement_learning/crl2/train.py --task Isaac-RAMBO-Quadruped
 To play:
 ```bash
 # in the root directory of IsaacLab
-python scripts/reinforcement_learning/crl2/play.py --task Isaac-RAMBO-Quadruped-Go2-v0 --headless --logger=wandb --video
-#python scripts/reinforcement_learning/crl2/play.py --task Isaac-RAMBO-Biped-Go2-v0 --headless --logger=wandb --video
+python scripts/reinforcement_learning/crl2/play.py --task Isaac-RAMBO-Quadruped-Go2-v0 --num_envs 10
+#python scripts/reinforcement_learning/crl2/play.py --task Isaac-RAMBO-Biped-Go2-v0 --num_envs 10
 ```
 ## Citation
 If you use this code in your research, please cite our paper:
