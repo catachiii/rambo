@@ -1,0 +1,48 @@
+seed: 42
+
+general:
+  experiment_name: "rambo_quadruped"
+  run_name: "walk"
+  num_envs: 4096
+  max_iterations: 2000
+  save_interval: 50  # iterations
+  resume: False
+  video: False
+  video_length: 5  # iterations , 5 * # steps_per_env_iter = 160 steps
+  video_interval: 100  # iterations
+  logger: "tensorboard"
+  offline_mode: False
+
+algorithm:
+  empirical_normalization: True  # works well with adaptive learning rate
+  name: 'PPO'
+  steps_per_env_iter: 24
+  learning_rate: 1.0e-3
+
+  random_episode_init: True
+  num_mini_batches: 4
+  num_learning_epochs: 5
+  clip_value_target: True
+  clip_value: 0.2
+  clip_ratio: 0.2
+
+  schedule: 'adaptive'
+  schedule_compare: 2.0
+  schedule_multiplier: 1.5
+  desired_kl: 0.02
+  min_learning_rate: 1.0e-4
+  max_learning_rate: 1.0e-2
+
+  value_loss_coef: 1.0
+  entropy_coef: 0.001
+  clip_grad_norm: 1.0
+  gamma: 0.99
+  lam: 0.95
+
+network:
+  policy_hidden: [ 512, 256, 128 ]
+  policy_activation: 'elu'
+  log_std_init: 0.0
+
+  value_hidden: [ 512, 256, 128 ]
+  value_activation: 'elu'
