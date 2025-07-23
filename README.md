@@ -10,7 +10,7 @@
 
 Accepted to IEEE Robotics and Automation Letters (RA-L) 2025.
 
-[Paper](https://arxiv.org/pdf/2504.06662) | [Arxiv](http://arxiv.org/abs/2504.06662) | [Website]( https://jin-cheng.me/rambo.github.io/)
+[Paper](https://arxiv.org/pdf/2504.06662) | [Arxiv](http://arxiv.org/abs/2504.06662) | [Video](https://youtu.be/VdZxhLNG6wQ) | [Website]( https://jin-cheng.me/rambo.github.io/)
 
 [![IsaacSim](https://img.shields.io/badge/IsaacSim-4.5.0-silver.svg)](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html)
 [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
